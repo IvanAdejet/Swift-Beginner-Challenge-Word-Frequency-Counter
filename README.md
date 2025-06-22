@@ -2,6 +2,7 @@
 Goal:
 Create a Swift command-line application that reads a sentence from the user and counts the
 frequency of each word.
+
 Requirements:
 - Ask the user to input a sentence.
 - Normalize the sentence by converting it to lowercase.
@@ -13,11 +14,13 @@ Additional Challenge (Optional):
 - Ignore punctuation.
 - Sort the output alphabetically or by frequency.
 - Use a Set to identify and print the unique words.
+
 Hints:
 - Use components(separatedBy:) to split the string.
 - Use a for loop to iterate through the array of words.
 - Use a Dictionary to map words to counts.
 - Set can help to get unique words.
+
 Expected Outcome:
 A functional Swift CLI app that reinforces:
 - String manipulation
