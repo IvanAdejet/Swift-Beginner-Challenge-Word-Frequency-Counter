@@ -8,6 +8,7 @@ Requirements:
 - Split the sentence into words (you can split by spaces).
 - Use a Dictionary to count the frequency of each word.
 - Print the frequency of each word in the format: 'word: count'.
+  
 Additional Challenge (Optional):
 - Ignore punctuation.
 - Sort the output alphabetically or by frequency.
