@@ -1,22 +1,19 @@
 
-let sentence = """
+var sentence = """
 Hello there, how are you doing sir, I hope you're doing well. \
 I will create this random sentence to test my code. \
 Funny enough I cannot type user input, which is sad.
 """
-
 var wordCount: [String: Int] = [:]
-var count : Int
 
+sentence.removeAll { $0 == "," || $0 == "." }
 for word in sentence.lowercased().split(separator: " ") {
-    if wordCount.contains { $0.key == word } {
-        count = wordCount[String(word)]!
-        wordCount[String(word)] = count + 1
-    } else {
-        wordCount[String(word)] = 1
-    }
+    wordCount[String(word), default : 0] += 1
+    //wordCount[String(word)] = (wordCount[String(word)] ?? 0) + 1
 }
 
-for (word,value) in wordCount {
+let wordCountSorted = wordCount.sorted { $0.value > $1.value }
+for (word,value) in wordCountSorted {
     print("\(word): \(value)")
 }
+
