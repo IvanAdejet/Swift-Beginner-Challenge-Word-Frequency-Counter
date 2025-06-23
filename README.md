@@ -27,4 +27,3 @@ A functional Swift CLI app that reinforces:
 - Collections (Array, Dictionary, Set)
 - Optionals (optional binding if needed)
 - Control flow (loops, conditions)
-Delete
