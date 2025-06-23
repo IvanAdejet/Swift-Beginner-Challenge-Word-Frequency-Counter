@@ -1,5 +1,5 @@
 
-var sentence = """
+let sentence = """
 Hello there, how are you doing sir, I hope you're doing well. \
 I will create this random sentence to test my code. \
 Funny enough I cannot type user input, which is sad.
@@ -16,4 +16,7 @@ for word in sentence.lowercased().split(separator: " ") {
         wordCount[String(word)] = 1
     }
 }
-print(wordCount)
+
+for (word,value) in wordCount {
+    print("\(word): \(value)")
+}
